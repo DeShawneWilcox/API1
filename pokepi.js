@@ -1,4 +1,4 @@
-const baseUrl = 'https://pokeapi.co/api/v2/pokemon/{name}/'
+const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=892&offset=200'
 let url;
 const searchTerm = document.querySelector('.search');
 const searchForm = document.querySelector('form');
@@ -16,9 +16,9 @@ nextBtn.addEventListener('click', nextPage);
 previousBtn.addEventListener('click', previousPage);
 
 function fetchResults(e) {
-    // console.log(e);
+     //console.log(e);
     e.preventDefault();
-    url = `${baseURL}&page=${pageNumber}&q=${searchTerm.value}`;
+    url = `${baseUrl}&page=${pageNumber}&q=${searchTerm.value}`;
     
     fetch(url)
     .then(function (result) {
@@ -33,7 +33,7 @@ function fetchResults(e) {
 
 function displayResults(json) {
     console.log('Display Results', json);
-    // console.log(json.response.docs);
+    //console.log(json.response.docs);
     while (section.firstChild) {
         section.removeChild(section.firstChild);
     }
