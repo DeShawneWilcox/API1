@@ -1,0 +1,42 @@
+a {
+    background-color: red;
+}
+h1 {
+    text-align: center;
+    margin-top: 2em
+    border: 1em;
+}
+
+
+a.navbar.navbar-light.bg-light {
+    color: red;
+}
+
+form {
+    align-content: center;
+    margin: 3em;
+    border: 5em;
+    /* background-color:lightblue; */
+}
+
+img {
+    background-color: lightblue;
+
+}
+
+section {
+    margin: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+avitar.src {
+    justify-content: center;
+}
+
+button {
+    border-radius: .2em;
+}
+
