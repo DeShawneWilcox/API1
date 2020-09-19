@@ -1,16 +1,19 @@
-a {
-    background-color: red;
-}
+
 h1 {
     text-align: center;
-    margin-top: 2em
+    margin-top: 2em;
     border: 1em;
+    /* background-color: red; */
+    width: auto;
+}    
+
+body {
+    background-image: url("greenery.png");
+ 
 }
-
-
-a.navbar.navbar-light.bg-light {
+/* a.navbar.navbar-light.bg-light {
     color: red;
-}
+} */
 
 form {
     align-content: center;
@@ -29,6 +32,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 
 }
 
@@ -36,7 +40,11 @@ avitar.src {
     justify-content: center;
 }
 
-button {
+.submit {
     border-radius: .2em;
+    background-color: rgba(140, 211, 235, 0.774);
+    justify-content: center;
+    align-items: center;
+
 }
 
